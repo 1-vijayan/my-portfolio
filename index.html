@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Vijayan">
+    <meta name="description" content="This page contains the details about me">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijayan - Portfolio</title>
+    
+    <!-- Google Fonts (Outfit) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
+    
+    <!-- SweetAlert for form submission popup -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="#home" class="logo">V<span>ijayan</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars bar-icon"></i>
+                <i class="fa-solid fa-xmark close-icon"></i>
+            </button>
+            <nav class="menu" id="navMenu">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="home-container">
+            <div class="home-text">
+                <h3>Hello, I'm</h3>
+                <h1>Vijayan S</h1>
+                <p class="subtitle">Computer Science Graduate & Full Stack Developer</p>
+                <p class="description">from Salem. I completed my B.E. in Computer Science Engineering, and now I am pursuing a Python Full Stack course where I am learning Python, web development, databases, and related technologies.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/vijayan-s-028644252/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/1-vijayan" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/vijayan_0606?igsh=MW5hZTY3ZmQyanU3cQ==" target="_blank" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn primary-btn">Get In Touch</a>
+                    <a href="#projects" class="btn secondary-btn">View Work</a>
+                </div>
+            </div>
+            <div class="home-image">
+                <div class="img-wrapper">
+                    <img src="vijayan.png" alt="Vijayan S">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+            <div class="about-card">
+                <div class="about-card-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                <h3>Who I Am</h3>
+                <p>I completed my schooling at The Gugai Higher Secondary School. Having completed my B.E. in Computer Science Engineering, I am now pursuing a Python Full Stack course to specialize in building web applications, database management, and Python programming.</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card-icon"><i class="fa-solid fa-gamepad"></i></div>
+                <h3>Interests & Hobbies</h3>
+                <p>Outside of academics, I enjoy programming challenge exploration, typing practice, playing video games, and playing shuttlecock, which helps me stay sharp, fit, and creative.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skills-card">
+                <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                <h3>Programming</h3>
+                <div class="skills-list">
+                    <span class="skill-badge">Python (Basics)</span>
+                    <span class="skill-badge">OOP Concepts (Strong)</span>
+                </div>
+            </div>
+            <div class="skills-card">
+                <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <h3>Web Development</h3>
+                <div class="skills-list">
+                    <span class="skill-badge">HTML5</span>
+                    <span class="skill-badge">CSS3</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">Full-Stack (Learning)</span>
+                </div>
+            </div>
+            <div class="skills-card">
+                <div class="card-icon"><i class="fa-solid fa-toolbox"></i></div>
+                <h3>Tools & Strengths</h3>
+                <div class="skills-list">
+                    <span class="skill-badge">Git & GitHub</span>
+                    <span class="skill-badge">MS Office</span>
+                    <span class="skill-badge">Fast Typing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fa-solid fa-eye project-icon"></i>
+                    <h3>Diabetic Retinopathy Detection Using Deep Learning</h3>
+                </div>
+                <p>Developed a deep learning-based web application for detecting Diabetic Retinopathy from retinal fundus images. The system analyzes uploaded eye images and predicts the severity of the disease, helping in early diagnosis and screening.</p>
+                <div class="project-tech">
+                    <span class="tech-badge">Python 3.11</span>
+                    <span class="tech-badge">TensorFlow / Keras</span>
+                    <span class="tech-badge">OpenCV</span>
+                    <span class="tech-badge">NumPy</span>
+                    <span class="tech-badge">Flask</span>
+                    <span class="tech-badge">HTML, CSS, JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/1-vijayan/DR-Detection" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> GitHub Code</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fa-solid fa-globe project-icon"></i>
+                    <h3>Personal Portfolio & Coding Apps</h3>
+                </div>
+                <p>Created personal portfolio websites and Python-based utility programs. Currently improving full-stack development skills and building projects for GitHub and live hosting.</p>
+                <div class="project-tech">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">Python</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/1-vijayan" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> GitHub Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+            <form name="submit-to-google-sheet" action="mailto:your_email@example.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Enter your name</label>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Enter your email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Enter your message</label>
+                    <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="btn submit-btn">Submit Form <i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Vijayan S. All rights reserved.</p>
+        <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/vijayan-s-028644252/" class="footer__icon" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/1-vijayan" class="footer__icon" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/vijayan_0606?igsh=MW5hZTY3ZmQyanU3cQ==" class="footer__icon" target="_blank" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        <div class="footer-up">
+            <a href="#home" class="scroll-up-btn" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
